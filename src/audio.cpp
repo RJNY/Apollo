@@ -319,6 +319,7 @@ namespace audio {
   }
 
   void stop_audio_control(audio_ctx_t &ctx) {
+    // restore audio-sink if applicable
     if (!ctx.restore_sink) {
       return;
     }
